@@ -20,7 +20,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${barlow_semi_condensed.variable} bg-lightGrayishBlue px-6 py-8 font-sans md:p-40`}>
+				className={`${barlow_semi_condensed.variable} bg-lightGrayishBlue px-6 py-8 font-sans`}>
 				{children}
 			</body>
 		</html>

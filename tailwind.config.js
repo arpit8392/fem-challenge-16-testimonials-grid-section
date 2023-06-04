@@ -25,6 +25,9 @@ module.exports = {
 				quotationDesktopPosition: 'right 8.5rem top 1.5rem',
 				quotationMobilePosition: 'right 1.5rem top 0.5rem',
 			},
+			maxWidth: {
+				'8xl': '1400px',
+			},
 		},
 	},
 	plugins: [],

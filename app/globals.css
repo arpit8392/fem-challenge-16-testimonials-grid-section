@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.grid-item-1 {
+	@apply bg-moderateViolet bg-quotation bg-quotationMobilePosition bg-no-repeat text-white md:col-span-2 md:max-w-full md:bg-quotationDesktopPosition;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.grid-item-2 {
+	@apply bg-darkGrayishBlue text-white;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.grid-item-3 {
+	@apply bg-white text-darkGrayishBlue md:col-start-1 md:row-start-2 md:gap-y-6;
+}
+
+.grid-item-4 {
+	@apply bg-darkBlackishBlue text-lightGrayishBlue md:col-start-2 md:col-end-4 md:row-start-2 md:max-w-full md:gap-y-6;
+}
+
+.grid-item-5 {
+	@apply bg-white text-darkGrayishBlue md:row-span-2 md:gap-y-6;
+}
+
+.grid-item-1 img {
+	@apply border-2 border-borderViolet;
+}
+
+.grid-item-4 img {
+	@apply border-2 border-moderateViolet;
+}
+
+.grid-item-1 blockquote {
+	@apply pt-10 md:pt-0;
 }

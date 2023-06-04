@@ -1,8 +1,6 @@
 import testimonials from '@/data'
 import TestimonialItem from './components/TestimonialItem'
 
-// TODO: final review before publishing
-
 export default function Home() {
 	return (
 		<main className='grid min-h-screen place-content-center md:mx-auto md:max-w-8xl'>
